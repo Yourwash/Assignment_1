@@ -1,0 +1,28 @@
+body {
+    background-color: black; 
+    color: white;
+}
+
+.content {
+    max-width: 1280px;
+    margin: auto;
+}
+
+nav {
+    border-radius: 5px;
+}
+
+p {
+    border-radius: 5px;
+}
+
+header {
+    color: black;
+}
+
+.slide-down-animation-course {
+    display: none;
+}
+.slide-down-animation-assignment {
+    display: none;
+}

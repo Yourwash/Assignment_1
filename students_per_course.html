@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students per Course Form</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./CSS/stylesheet-1.css">
+
+    <!-- Custom JavaScript-->
+    <script src="./js/students.js"></script>
+
+</head>
+
+<body>
+    <div id="container" class="content">
+
+        <header class="jumbotron bg-warning text-center">
+            <h1>Student's per Course Form.</h1>
+            <p>Produce the following web pages by sketching their layout using HTML/CSS.</p>
+            <p>Add / Edit Form for Student's per Course. </p>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a href="#" class="navbar-brand">Student's per Course Form</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span
+                    class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Course's Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers.html">Trainer's Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="students.html">Student's Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assignments.html">Assignment's Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers_per_course.html">Trainers per Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assignments_per_course.html">Assignments per Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assignment_per_student_per_course.html">Assignments per Student per
+                            Course</a>
+                    </li>
+                </ul>
+            </div>
+        </nav><!-- End of Bootstrap Navigation Bar -->
+
+        <div class="row">
+            <!-- Start of Bootstrap Container-->
+            <div class="col-lg-3 offset-lg-2 my-5">
+                <p class="bg-warning text-black text-center py-1"><strong>Select Course:</strong></p>
+                <form class="row-lg g-3">
+                    <div class="mx-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="course-1">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Course 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="course-2">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Course 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="course-3">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Course 3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="course-4">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Course 4
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row-lg">
+                        <button type="submit" class="btn btn-warning float-right text-black py-1"
+                            id="select-course"><strong>Select</strong></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 offset-lg-2 my-5">
+                <p class="bg-warning text-black text-center py-1"><strong>Add Student:</strong></p>
+                <form class="row-lg g-3">
+                    <div class="col-lg">
+                        <label for="validationServer01" class="form-label">First name:</label>
+                        <input type="text" class="form-control mb-4" id="first-name" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Does not look good!
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <label for="validationServer02" class="form-label">Last name:</label>
+                        <input type="text" class="form-control mb-4" id="last-name" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Does not look good!
+                        </div>
+                    </div>
+                    <div class="row-lg">
+                        <button type="submit" class="btn btn-warning float-right text-black py-1" id="add-student"
+                            value="Submit"><strong>Select</strong></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 offset-lg-2 my-5">
+                <p class="bg-warning text-black text-center py-1"><strong>Select Course:</strong></p>
+                <form class="row-lg g-3">
+                    <div class="mx-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="course-1">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Course 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Course 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Course 3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Course 4
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row-lg">
+                        <button type="submit" class="btn btn-warning float-right text-black py-1"
+                            id="course-submit"><strong>Select</strong></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 offset-lg-2 my-5">
+                <p class="bg-warning text-black text-center py-1"><strong>Remove Student:</strong></p>
+                <form class="row-lg g-3">
+                    <div class="col-lg">
+                        <label for="validationServer01" class="form-label">First name:</label>
+                        <input type="text" class="form-control mb-4" id="first-name" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Does not look good!
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <label for="validationServer02" class="form-label">Last name:</label>
+                        <input type="text" class="form-control mb-4" id="last-name" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Does not look good!
+                        </div>
+                    </div>
+                    <div class="row-lg">
+                        <button type="submit" class="btn btn-warning float-right text-black py-1" id="registration"
+                            value="Submit"><strong>Remove</strong></button>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <footer class="jumbotron bg-warning text-center">
+                <P style="color: black">Copyright &copy; 2022 Yourwash-A.E.</P>
+            </footer>
+        </div><!-- End of Bootstrap Container -->
+
+    </div><!-- End of Container -->
+
+</body>
+
+</html>
